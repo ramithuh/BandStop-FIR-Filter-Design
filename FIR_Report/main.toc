@@ -1,0 +1,25 @@
+\babel@toc {english}{}
+\contentsline {section}{List of Figures}{2}{section*.2}% 
+\contentsline {section}{List of Tables}{3}{section*.3}% 
+\contentsline {section}{\numberline {1}Abstract}{4}{section.1}% 
+\contentsline {section}{\numberline {2}Introduction}{4}{section.2}% 
+\contentsline {subsection}{\numberline {2.1}Window Method}{4}{subsection.2.1}% 
+\contentsline {subsection}{\numberline {2.2}Kaiser Window Method}{5}{subsection.2.2}% 
+\contentsline {section}{\numberline {3}Kaiser Window - Design Steps}{7}{section.3}% 
+\contentsline {subsection}{\numberline {3.1}Deriving the Ideal Impulse Response}{7}{subsection.3.1}% 
+\contentsline {subsubsection}{\numberline {3.1.1}Calculating the Realistic Specifications}{7}{subsubsection.3.1.1}% 
+\contentsline {subsubsection}{\numberline {3.1.2}Ideal Impulse Response}{7}{subsubsection.3.1.2}% 
+\contentsline {subsection}{\numberline {3.2}Kaiser Parameters}{8}{subsection.3.2}% 
+\contentsline {subsubsection}{\numberline {3.2.1}Deriving $\delta $}{8}{subsubsection.3.2.1}% 
+\contentsline {subsubsection}{\numberline {3.2.2}Calculating Actual Stopband Loss $A_a$ \& Passband Ripple $A_p$}{9}{subsubsection.3.2.2}% 
+\contentsline {subsubsection}{\numberline {3.2.3}Choosing Parameter $\alpha $}{9}{subsubsection.3.2.3}% 
+\contentsline {subsubsection}{\numberline {3.2.4}Choosing Parameter $D$ \& Window size $N$}{9}{subsubsection.3.2.4}% 
+\contentsline {section}{\numberline {4}Results}{10}{section.4}% 
+\contentsline {subsection}{\numberline {4.1}Forming the window sequence $w_k(nT)$}{10}{subsection.4.1}% 
+\contentsline {subsection}{\numberline {4.2}Impulse Response of Bandstop Filter}{11}{subsection.4.2}% 
+\contentsline {subsection}{\numberline {4.3}Magnitude Response of the Digital Filter}{11}{subsection.4.3}% 
+\contentsline {subsection}{\numberline {4.4}Magnitude Responses of the Passbands}{12}{subsection.4.4}% 
+\contentsline {subsection}{\numberline {4.5}Input Signal}{12}{subsection.4.5}% 
+\contentsline {subsection}{\numberline {4.6}Filtered Signal}{13}{subsection.4.6}% 
+\contentsline {subsection}{\numberline {4.7}Expected Outputs}{14}{subsection.4.7}% 
+\contentsline {section}{References}{15}{section*.20}% 

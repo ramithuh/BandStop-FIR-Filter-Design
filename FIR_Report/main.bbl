@@ -1,0 +1,18 @@
+\begin{thebibliography}{1}
+
+\bibitem{oppenheim_schafer_2010}
+Alan~V. Oppenheim and Ronald~W. Schafer.
+\newblock {\em Discrete-time signal processing}.
+\newblock Pearson, 2010.
+
+\bibitem{antoniou_2006}
+Andreas Antoniou.
+\newblock {\em Digital signal processing}.
+\newblock McGraw-Hill, 2006.
+
+\bibitem{kaiser_window_beta_parameter}
+Center for Computer Research~in Music and Stanford~University
+  Acoustics~(CCRMA).
+\newblock - kaiser window beta parameter.
+
+\end{thebibliography}

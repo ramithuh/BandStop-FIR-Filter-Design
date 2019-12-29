@@ -1,0 +1,24 @@
+\BOOKMARK [1][-]{section*.2}{List of Figures}{}% 1
+\BOOKMARK [1][-]{section*.3}{List of Tables}{}% 2
+\BOOKMARK [1][-]{section.1}{Abstract}{}% 3
+\BOOKMARK [1][-]{section.2}{Introduction}{}% 4
+\BOOKMARK [2][-]{subsection.2.1}{Window Method}{section.2}% 5
+\BOOKMARK [2][-]{subsection.2.2}{Kaiser Window Method}{section.2}% 6
+\BOOKMARK [1][-]{section.3}{Kaiser Window - Design Steps}{}% 7
+\BOOKMARK [2][-]{subsection.3.1}{Deriving the Ideal Impulse Response}{section.3}% 8
+\BOOKMARK [3][-]{subsubsection.3.1.1}{Calculating the Realistic Specifications}{subsection.3.1}% 9
+\BOOKMARK [3][-]{subsubsection.3.1.2}{Ideal Impulse Response}{subsection.3.1}% 10
+\BOOKMARK [2][-]{subsection.3.2}{Kaiser Parameters}{section.3}% 11
+\BOOKMARK [3][-]{subsubsection.3.2.1}{Deriving }{subsection.3.2}% 12
+\BOOKMARK [3][-]{subsubsection.3.2.2}{Calculating Actual Stopband Loss Aa \046 Passband Ripple Ap}{subsection.3.2}% 13
+\BOOKMARK [3][-]{subsubsection.3.2.3}{Choosing Parameter }{subsection.3.2}% 14
+\BOOKMARK [3][-]{subsubsection.3.2.4}{Choosing Parameter D \046 Window size N}{subsection.3.2}% 15
+\BOOKMARK [1][-]{section.4}{Results}{}% 16
+\BOOKMARK [2][-]{subsection.4.1}{Forming the window sequence wk\(nT\)}{section.4}% 17
+\BOOKMARK [2][-]{subsection.4.2}{Impulse Response of Bandstop Filter}{section.4}% 18
+\BOOKMARK [2][-]{subsection.4.3}{Magnitude Response of the Digital Filter}{section.4}% 19
+\BOOKMARK [2][-]{subsection.4.4}{Magnitude Responses of the Passbands}{section.4}% 20
+\BOOKMARK [2][-]{subsection.4.5}{Input Signal}{section.4}% 21
+\BOOKMARK [2][-]{subsection.4.6}{Filtered Signal}{section.4}% 22
+\BOOKMARK [2][-]{subsection.4.7}{Expected Outputs}{section.4}% 23
+\BOOKMARK [1][-]{section*.20}{References}{}% 24
