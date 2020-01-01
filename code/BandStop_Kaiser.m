@@ -1,7 +1,7 @@
 %%Author : R.U. Hettiarachchi %%
 %%Index  : 170221T            %%
 
-%% Given Design Parameters %% 
+%% Given Design Parameters : 
 
 A_p_tilde = 0.05; %Max Passband Ripple
 A_a_tilde = 47;   %Min stopband attenuation
@@ -12,7 +12,7 @@ Omega_a2 = 900;
 Omega_s  = 2800;
 T        = 2*pi/Omega_s;
 
-%% Calculating Realistic Specs %%
+%% Calculating Realistic Specs :
 
 B_t1 = Omega_a1 - Omega_p1;
 B_t2 = Omega_p2 - Omega_a2;
@@ -61,14 +61,14 @@ grid on;
 saveas(gcf,'window','epsc')
 
 
-%% Construct Ideal Impulse Response
+%% Construct Impulse Response of the Ideal Filter
 
 h = (1./(n*pi)).*(sin(Omega_c1*n*T) - sin(Omega_c2*n*T));
 h((N-1)/2+1) = 1 + (2/Omega_s)*(Omega_c1 - Omega_c2) ;
 n = 0 : (N-1);              %shifting by (N-1)/2
 
 
-%%  Causal Impulse Response
+%%  Causal Impulse Response of the Filter
 close all;
 h_w = h.*w.';
 
@@ -117,14 +117,14 @@ saveas(gcf,'lower passband','epsc')
 
 
 
-%% Input Siganl
+%% Input Signal
 % Freq components,
 
 Omega1 = Omega_c1/2;
 Omega2 = Omega_c1 + (Omega_c2-Omega_c1)/2; 
 Omega3 = Omega_c2 + (Omega_s/2-Omega_c2)/2;
 
-% generate discrete signal and evelope
+% Generate the Input signal
 
 samples = 300; % Enough to achieve a steady-state response.
 n1 = 0:1:samples; 
@@ -157,7 +157,6 @@ title('Single-Sided Amplitude Spectrum of x(nT)')
 xlabel('Frequency (rad/s)')
 ylabel('|X(w)|')
 saveas(gcf,'Xw','epsc')
-
 
 
 figure

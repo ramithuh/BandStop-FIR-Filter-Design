@@ -1,15 +1,15 @@
 \babel@toc {english}{}
 \contentsline {figure}{\numberline {1}{\ignorespaces Commonly used windows $w[n]$ \cite {oppenheim_schafer_2010}\relax }}{5}{figure.caption.5}% 
 \contentsline {figure}{\numberline {2}{\ignorespaces Amplitude response of common window types $w[n]$ \cite {antoniou_2006}\relax }}{5}{figure.caption.5}% 
-\contentsline {figure}{\numberline {3}{\ignorespaces Approximation Errors \cite {oppenheim_schafer_2010}\relax }}{5}{figure.caption.6}% 
-\contentsline {figure}{\numberline {4}{\ignorespaces $H(e^{j\omega T})$ - Red dotted lines represent $\omega _{p1}, \omega _{a1},\omega _{a2},\omega _{p2}$\relax }}{7}{figure.caption.7}% 
+\contentsline {figure}{\numberline {3}{\ignorespaces Approximation Errors \cite {oppenheim_schafer_2010}\relax }}{6}{figure.caption.6}% 
+\contentsline {figure}{\numberline {4}{\ignorespaces $H(e^{j\Omega T})$ - Red dotted lines represent $\Omega _{p1}, \Omega _{a1},\Omega _{a2},\Omega _{p2}$\relax }}{7}{figure.caption.7}% 
 \contentsline {figure}{\numberline {5}{\ignorespaces Intended Bandstop Filter Characteristics \cite {antoniou_2006}\relax }}{8}{figure.caption.8}% 
 \contentsline {figure}{\numberline {6}{\ignorespaces Constructed Kaiser Window\relax }}{10}{figure.caption.11}% 
 \contentsline {figure}{\numberline {7}{\ignorespaces Causal Impulse Response\relax }}{11}{figure.caption.12}% 
 \contentsline {figure}{\numberline {8}{\ignorespaces Magnitude Response of the BandStop Filter\relax }}{11}{figure.caption.13}% 
 \contentsline {figure}{\numberline {9}{\ignorespaces Upper passband (Zoomed)\relax }}{12}{figure.caption.14}% 
-\contentsline {figure}{\numberline {10}{\ignorespaces Lower passband (Zoomed)\relax }}{12}{figure.caption.14}% 
-\contentsline {figure}{\numberline {11}{\ignorespaces $x( nT) \ =\DOTSB \sum@ \slimits@ ^{3}_{i=1} cos[ \Omega _{i} nT]$\relax }}{12}{figure.caption.15}% 
-\contentsline {figure}{\numberline {12}{\ignorespaces $x( nT) \ *\ h_{w}( nT)$\relax }}{13}{figure.caption.17}% 
-\contentsline {figure}{\numberline {13}{\ignorespaces $\mathscr {F} \ ( x( nT) \ *\ h_{w}( nT))$\relax }}{13}{figure.caption.18}% 
-\contentsline {figure}{\numberline {14}{\ignorespaces $\mathscr {F} \ ( cos[ \Omega _{1} nT] \ +\ cos[ \Omega _{3} nT])$\relax }}{14}{figure.caption.19}% 
+\contentsline {figure}{\numberline {10}{\ignorespaces Lower passband (Zoomed)\relax }}{12}{figure.caption.15}% 
+\contentsline {figure}{\numberline {11}{\ignorespaces $x( nT) \ =\DOTSB \sum@ \slimits@ ^{3}_{i=1} cos[ \Omega _{i} nT]$\relax }}{13}{figure.caption.16}% 
+\contentsline {figure}{\numberline {12}{\ignorespaces $x( nT) \ *\ h_{w}( nT)$\relax }}{14}{figure.caption.18}% 
+\contentsline {figure}{\numberline {13}{\ignorespaces $\mathscr {F} \ ( x( nT) \ *\ h_{w}( nT))$\relax }}{14}{figure.caption.19}% 
+\contentsline {figure}{\numberline {14}{\ignorespaces $\mathscr {F} \ ( cos[ \Omega _{1} nT] \ +\ cos[ \Omega _{3} nT])$\relax }}{15}{figure.caption.20}% 

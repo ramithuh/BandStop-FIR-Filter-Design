@@ -1,0 +1,490 @@
+
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+   <!--
+This HTML was auto-generated from MATLAB code.
+To make changes, update the MATLAB code and republish this document.
+      --><title>BandStop_Kaiser</title><meta name="generator" content="MATLAB 9.7"><link rel="schema.DC" href="http://purl.org/dc/elements/1.1/"><meta name="DC.date" content="2020-01-01"><meta name="DC.source" content="BandStop_Kaiser.m"><style type="text/css">
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,font,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td{margin:0;padding:0;border:0;outline:0;font-size:100%;vertical-align:baseline;background:transparent}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:'';content:none}:focus{outine:0}ins{text-decoration:none}del{text-decoration:line-through}table{border-collapse:collapse;border-spacing:0}
+
+html { min-height:100%; margin-bottom:1px; }
+html body { height:100%; margin:0px; font-family:Arial, Helvetica, sans-serif; font-size:10px; color:#000; line-height:140%; background:#fff none; overflow-y:scroll; }
+html body td { vertical-align:top; text-align:left; }
+
+h1 { padding:0px; margin:0px 0px 25px; font-family:Arial, Helvetica, sans-serif; font-size:1.5em; color:#d55000; line-height:100%; font-weight:normal; }
+h2 { padding:0px; margin:0px 0px 8px; font-family:Arial, Helvetica, sans-serif; font-size:1.2em; color:#000; font-weight:bold; line-height:140%; border-bottom:1px solid #d6d4d4; display:block; }
+h3 { padding:0px; margin:0px 0px 5px; font-family:Arial, Helvetica, sans-serif; font-size:1.1em; color:#000; font-weight:bold; line-height:140%; }
+
+a { color:#005fce; text-decoration:none; }
+a:hover { color:#005fce; text-decoration:underline; }
+a:visited { color:#004aa0; text-decoration:none; }
+
+p { padding:0px; margin:0px 0px 20px; }
+img { padding:0px; margin:0px 0px 20px; border:none; }
+p img, pre img, tt img, li img, h1 img, h2 img { margin-bottom:0px; } 
+
+ul { padding:0px; margin:0px 0px 20px 23px; list-style:square; }
+ul li { padding:0px; margin:0px 0px 7px 0px; }
+ul li ul { padding:5px 0px 0px; margin:0px 0px 7px 23px; }
+ul li ol li { list-style:decimal; }
+ol { padding:0px; margin:0px 0px 20px 0px; list-style:decimal; }
+ol li { padding:0px; margin:0px 0px 7px 23px; list-style-type:decimal; }
+ol li ol { padding:5px 0px 0px; margin:0px 0px 7px 0px; }
+ol li ol li { list-style-type:lower-alpha; }
+ol li ul { padding-top:7px; }
+ol li ul li { list-style:square; }
+
+.content { font-size:1.2em; line-height:140%; padding: 20px; }
+
+pre, code { font-size:12px; }
+tt { font-size: 1.2em; }
+pre { margin:0px 0px 20px; }
+pre.codeinput { padding:10px; border:1px solid #d3d3d3; background:#f7f7f7; }
+pre.codeoutput { padding:10px 11px; margin:0px 0px 20px; color:#4c4c4c; }
+pre.error { color:red; }
+
+@media print { pre.codeinput, pre.codeoutput { word-wrap:break-word; width:100%; } }
+
+span.keyword { color:#0000FF }
+span.comment { color:#228B22 }
+span.string { color:#A020F0 }
+span.untermstring { color:#B20000 }
+span.syscmd { color:#B28C00 }
+
+.footer { width:auto; padding:10px 0px; margin:25px 0px 0px; border-top:1px dotted #878787; font-size:0.8em; line-height:140%; font-style:italic; color:#878787; text-align:left; float:none; }
+.footer p { margin:0px; }
+.footer a { color:#878787; }
+.footer a:hover { color:#878787; text-decoration:underline; }
+.footer a:visited { color:#878787; }
+
+table th { padding:7px 5px; text-align:left; vertical-align:middle; border: 1px solid #d6d4d4; font-weight:bold; }
+table td { padding:7px 5px; text-align:left; vertical-align:top; border:1px solid #d6d4d4; }
+
+
+
+
+
+  </style></head><body><div class="content"><h2>Contents</h2><div><ul><li><a href="#2">Given Design Parameters %%</a></li><li><a href="#3">Calculating Realistic Specs %%</a></li><li><a href="#4">Calculating Kaiser Parameters %%</a></li><li><a href="#5">Construct Kaiser Window</a></li><li><a href="#6">Construct Impulse Response of the Ideal Filter</a></li><li><a href="#7">Causal Impulse Response of the Filter</a></li><li><a href="#8">Magnitude response of the digital filter &amp; Passbands zoomed in</a></li><li><a href="#9">Input Siganl</a></li><li><a href="#10">Expected Signal in the Freq domain</a></li></ul></div><pre class="codeinput"><span class="comment">%%Author : R.U. Hettiarachchi %%</span>
+<span class="comment">%%Index  : 170221T            %%</span>
+</pre><h2 id="2">Given Design Parameters %%</h2><pre class="codeinput">A_p_tilde = 0.05; <span class="comment">%Max Passband Ripple</span>
+A_a_tilde = 47;   <span class="comment">%Min stopband attenuation</span>
+Omega_p1 = 500;
+Omega_p2 = 1050;
+Omega_a1 = 600;
+Omega_a2 = 900;
+Omega_s  = 2800;
+T        = 2*pi/Omega_s;
+</pre><h2 id="3">Calculating Realistic Specs %%</h2><pre class="codeinput">B_t1 = Omega_a1 - Omega_p1;
+B_t2 = Omega_p2 - Omega_a2;
+
+B_t = min(B_t1,B_t2)
+Omega_c1 = Omega_p1 + B_t/2
+Omega_c2 = Omega_p2 - B_t/2
+</pre><pre class="codeoutput">
+B_t =
+
+   100
+
+
+Omega_c1 =
+
+   550
+
+
+Omega_c2 =
+
+        1000
+
+</pre><h2 id="4">Calculating Kaiser Parameters %%</h2><pre class="codeinput">delta_p_tilde = (10^(0.05*A_p_tilde)-1)/(10^(0.05*A_p_tilde)+1)
+delta_a_tilde =  10^(-0.05*A_a_tilde)
+
+delta = min(delta_p_tilde,delta_a_tilde)
+
+A_a = -20*log10(delta)                  <span class="comment">%Actual Stopband Loss</span>
+A_p = 20*log10((1+delta)/(1-delta))     <span class="comment">%Actual Passband Ripple</span>
+
+
+<span class="comment">% -&gt; Find alpha</span>
+alpha = 0;
+<span class="keyword">if</span> (A_a &gt;21 &amp;&amp; A_a &lt;= 50) alpha = 0.5842*(A_a-21)^0.4 + 0.07886*(A_a-21); <span class="keyword">else</span> alpha = 0.1102*(A_a-8.7); <span class="keyword">end</span>
+
+<span class="comment">% -&gt; Find D</span>
+D = 0.9222;
+<span class="keyword">if</span>(A_a &gt; 21) D = (A_a - 7.95)/14.36; <span class="keyword">end</span>
+
+<span class="comment">% -&gt; Find N</span>
+
+N = (Omega_s*D)/B_t+1;
+N = ceil(N) + mod(ceil(N)-1,2) <span class="comment">%smallest odd integer satisfying the inequality</span>
+</pre><pre class="codeoutput">
+delta_p_tilde =
+
+    0.0029
+
+
+delta_a_tilde =
+
+    0.0045
+
+
+delta =
+
+    0.0029
+
+
+A_a =
+
+   50.8175
+
+
+A_p =
+
+    0.0500
+
+
+N =
+
+    85
+
+</pre><h2 id="5">Construct Kaiser Window</h2><pre class="codeinput">n = -(N-1)/2 : 1 : (N-1)/2;
+w = my_kaiser(N,alpha);
+
+figure;
+stem(n,w);
+xlabel(<span class="string">'n'</span>);
+ylabel(<span class="string">'w[n]'</span>);
+axis([-(N-1)/2 (N-1)/2 0 1 ])
+title(<span class="string">'Window Function'</span>);
+grid <span class="string">on</span>;
+saveas(gcf,<span class="string">'window'</span>,<span class="string">'epsc'</span>)
+</pre><img vspace="5" hspace="5" src="BandStop_Kaiser_01.png" alt=""> <h2 id="6">Construct Impulse Response of the Ideal Filter</h2><pre class="codeinput">h = (1./(n*pi)).*(sin(Omega_c1*n*T) - sin(Omega_c2*n*T));
+h((N-1)/2+1) = 1 + (2/Omega_s)*(Omega_c1 - Omega_c2) ;
+n = 0 : (N-1);              <span class="comment">%shifting by (N-1)/2</span>
+</pre><h2 id="7">Causal Impulse Response of the Filter</h2><pre class="codeinput">close <span class="string">all</span>;
+h_w = h.*w.';
+
+figure;
+stem(n,h_w);
+xlabel(<span class="string">'nT'</span>);
+ylabel(<span class="string">'h_w[n]'</span>);
+axis([0 (N-1) -0.15 0.75 ])
+title(<span class="string">'Causal Impulse Response'</span>);
+grid <span class="string">on</span>;
+saveas(gcf,<span class="string">'cir'</span>,<span class="string">'epsc'</span>)
+</pre><img vspace="5" hspace="5" src="BandStop_Kaiser_02.png" alt=""> <h2 id="8">Magnitude response of the digital filter &amp; Passbands zoomed in</h2><pre class="codeinput">freqz(h_w);
+[z,w] = freqz(h_w);
+w = w./T;
+
+figure;
+plot(w,20*log10(abs(z)))
+grid <span class="string">on</span>;
+axis([0 1400 20*log10(0) 20*log10(1.1) ])
+xlabel(<span class="string">'Frequency rad/s'</span>);
+ylabel(<span class="string">'Magnitude (dB)'</span>);
+title(<span class="string">'Magnitude response of the digital filter'</span>);
+saveas(gcf,<span class="string">'magnitude response of filter'</span>,<span class="string">'epsc'</span>)
+
+
+figure;
+plot(w,20*log10(abs(z)))
+grid <span class="string">on</span>;
+axis([200 550 20*log10(0.98) 20*log10(1.005) ])
+xlabel(<span class="string">'Frequency rad/s'</span>);
+ylabel(<span class="string">'Magnitude (dB)'</span>);
+title(<span class="string">'Magnitude response - Lower Passband'</span>);
+saveas(gcf,<span class="string">'upper passband'</span>,<span class="string">'epsc'</span>)
+
+figure;
+plot(w,20*log10(abs(z)))
+grid <span class="string">on</span>;
+axis([1000 1400 20*log10(0.98) 20*log10(1.005) ])
+xlabel(<span class="string">'Frequency rad/s'</span>);
+ylabel(<span class="string">'Magnitude (dB)'</span>);
+title(<span class="string">'Magnitude response - Upper Passband'</span>);
+saveas(gcf,<span class="string">'lower passband'</span>,<span class="string">'epsc'</span>)
+</pre><img vspace="5" hspace="5" src="BandStop_Kaiser_03.png" alt=""> <img vspace="5" hspace="5" src="BandStop_Kaiser_04.png" alt=""> <img vspace="5" hspace="5" src="BandStop_Kaiser_05.png" alt=""> <img vspace="5" hspace="5" src="BandStop_Kaiser_06.png" alt=""> <h2 id="9">Input Siganl</h2><p>Freq components,</p><pre class="codeinput">Omega1 = Omega_c1/2;
+Omega2 = Omega_c1 + (Omega_c2-Omega_c1)/2;
+Omega3 = Omega_c2 + (Omega_s/2-Omega_c2)/2;
+
+<span class="comment">% Generate the Input signal</span>
+
+samples = 300; <span class="comment">% Enough to achieve a steady-state response.</span>
+n1 = 0:1:samples;
+n2 = 0:0.1:samples;
+
+x     = cos(Omega1.*n1*T) + cos(Omega2.*n1*T) + cos(Omega3.*n1*T);
+X_env = cos(Omega1.*n2*T) + cos(Omega2.*n2*T) + cos(Omega3.*n2*T);
+
+R = cos(Omega1.*n1*T) + cos(Omega3.*n1*T);
+
+
+stem(n1(1:100),x(1:100))
+xlabel(<span class="string">'n'</span>)
+ylabel(<span class="string">'Amplitude'</span>)
+title(strcat([<span class="string">'Input signal x[n]'</span>,<span class="string">' '</span>,<span class="string">'- Time Domain'</span>]));
+hold <span class="string">on</span>
+plot(n2(1:1000),X_env(1:1000),<span class="string">'-.'</span>)
+legend(<span class="string">'Input signal'</span>,<span class="string">'Input Signal Continous Time Shape'</span>);
+
+
+figure;
+L = length(x);
+NFFT = 2^nextpow2(L); <span class="comment">% Next power of 2 from length of y</span>
+Y = fft(x,NFFT)/L;
+f = Omega_s/(2)*linspace(0,1,NFFT/2+1);
+
+<span class="comment">% Plot single-sided amplitude spectrum.</span>
+plot(f,2*abs(Y(1:NFFT/2+1)))
+title(<span class="string">'Single-Sided Amplitude Spectrum of x(nT)'</span>)
+xlabel(<span class="string">'Frequency (rad/s)'</span>)
+ylabel(<span class="string">'|X(w)|'</span>)
+saveas(gcf,<span class="string">'Xw'</span>,<span class="string">'epsc'</span>)
+
+
+figure
+L=1400;
+X = fft(x,L);
+H_w = fft(h_w,L);
+filtered = ifft(X.*H_w);
+stem(filtered(1:100));
+grid <span class="string">on</span>;
+title(<span class="string">'Filtered Input Signal x(nT)'</span>)
+saveas(gcf,<span class="string">'Xw'</span>,<span class="string">'epsc'</span>)
+
+
+figure
+plot(filtered(42:42+85))
+hold <span class="string">on</span>
+out = conv(h_w,x,<span class="string">'same'</span>); <span class="comment">%% 'same' is there to crop the filtered signal</span>
+plot(out(4:85))
+title(<span class="string">'Filtered Input Signal Using conv()'</span>)
+
+figure;
+L = length(out);
+NFFT = 2^nextpow2(L); <span class="comment">% Next power of 2 from length of y</span>
+Y = fft(out,NFFT)/L;
+f = Omega_s/(2)*linspace(0,1,NFFT/2+1);
+
+plot(f,2*abs(Y(1:NFFT/2+1)))    <span class="comment">% Plot single-sided amplitude spectrum.</span>
+title(<span class="string">'Single-Sided Amplitude Spectrum of the Filtered Signal'</span>)
+xlabel(<span class="string">'Frequency (rad/s)'</span>)
+ylabel(<span class="string">'|Y(f)|'</span>)
+</pre><img vspace="5" hspace="5" src="BandStop_Kaiser_07.png" alt=""> <img vspace="5" hspace="5" src="BandStop_Kaiser_08.png" alt=""> <img vspace="5" hspace="5" src="BandStop_Kaiser_09.png" alt=""> <img vspace="5" hspace="5" src="BandStop_Kaiser_10.png" alt=""> <img vspace="5" hspace="5" src="BandStop_Kaiser_11.png" alt=""> <h2 id="10">Expected Signal in the Freq domain</h2><pre class="codeinput">figure;
+L = length(R);
+NFFT = 2^nextpow2(L); <span class="comment">% Next power of 2 from length of y</span>
+Y = fft(R,NFFT)/L;
+f = Omega_s/(2)*linspace(0,1,NFFT/2+1);
+
+plot(f,2*abs(Y(1:NFFT/2+1)))    <span class="comment">% Plot single-sided amplitude spectrum.</span>
+title(<span class="string">'Single-Sided Amplitude Spectrum of the Expected Filtered Signal'</span>)
+xlabel(<span class="string">'Frequency (rad/s)'</span>)
+ylabel(<span class="string">'|Y(f)|'</span>)
+saveas(gcf,<span class="string">'efs'</span>,<span class="string">'epsc'</span>)
+</pre><img vspace="5" hspace="5" src="BandStop_Kaiser_12.png" alt=""> <p class="footer"><br><a href="https://www.mathworks.com/products/matlab/">Published with MATLAB&reg; R2019b</a><br></p></div><!--
+##### SOURCE BEGIN #####
+%%Author : R.U. Hettiarachchi %%
+%%Index  : 170221T            %%
+
+%% Given Design Parameters %% 
+
+A_p_tilde = 0.05; %Max Passband Ripple
+A_a_tilde = 47;   %Min stopband attenuation
+Omega_p1 = 500; 
+Omega_p2 = 1050;
+Omega_a1 = 600;
+Omega_a2 = 900;
+Omega_s  = 2800;
+T        = 2*pi/Omega_s;
+
+%% Calculating Realistic Specs %%
+
+B_t1 = Omega_a1 - Omega_p1;
+B_t2 = Omega_p2 - Omega_a2;
+
+B_t = min(B_t1,B_t2)
+Omega_c1 = Omega_p1 + B_t/2
+Omega_c2 = Omega_p2 - B_t/2
+
+%% Calculating Kaiser Parameters %%
+
+
+delta_p_tilde = (10^(0.05*A_p_tilde)-1)/(10^(0.05*A_p_tilde)+1)
+delta_a_tilde =  10^(-0.05*A_a_tilde)
+
+delta = min(delta_p_tilde,delta_a_tilde)
+
+A_a = -20*log10(delta)                  %Actual Stopband Loss
+A_p = 20*log10((1+delta)/(1-delta))     %Actual Passband Ripple 
+
+
+% -> Find alpha
+alpha = 0;
+if (A_a >21 && A_a <= 50) alpha = 0.5842*(A_a-21)^0.4 + 0.07886*(A_a-21); else alpha = 0.1102*(A_a-8.7); end
+
+% -> Find D
+D = 0.9222;
+if(A_a > 21) D = (A_a - 7.95)/14.36; end
+
+% -> Find N
+
+N = (Omega_s*D)/B_t+1;
+N = ceil(N) + mod(ceil(N)-1,2) %smallest odd integer satisfying the inequality
+
+%% Construct Kaiser Window
+
+n = -(N-1)/2 : 1 : (N-1)/2;
+w = my_kaiser(N,alpha);
+
+figure;
+stem(n,w);
+xlabel('n');
+ylabel('w[n]');
+axis([-(N-1)/2 (N-1)/2 0 1 ])
+title('Window Function');
+grid on;
+saveas(gcf,'window','epsc')
+
+
+%% Construct Impulse Response of the Ideal Filter
+
+h = (1./(n*pi)).*(sin(Omega_c1*n*T) - sin(Omega_c2*n*T));
+h((N-1)/2+1) = 1 + (2/Omega_s)*(Omega_c1 - Omega_c2) ;
+n = 0 : (N-1);              %shifting by (N-1)/2
+
+
+%%  Causal Impulse Response of the Filter
+close all;
+h_w = h.*w.';
+
+figure;
+stem(n,h_w);
+xlabel('nT');
+ylabel('h_w[n]');
+axis([0 (N-1) -0.15 0.75 ])
+title('Causal Impulse Response');
+grid on;
+saveas(gcf,'cir','epsc')
+
+%%  Magnitude response of the digital filter & Passbands zoomed in
+
+freqz(h_w);
+[z,w] = freqz(h_w);
+w = w./T;
+
+figure;
+plot(w,20*log10(abs(z)))
+grid on;
+axis([0 1400 20*log10(0) 20*log10(1.1) ])
+xlabel('Frequency rad/s');
+ylabel('Magnitude (dB)');
+title('Magnitude response of the digital filter');
+saveas(gcf,'magnitude response of filter','epsc')
+
+
+figure;
+plot(w,20*log10(abs(z)))
+grid on;
+axis([200 550 20*log10(0.98) 20*log10(1.005) ])
+xlabel('Frequency rad/s');
+ylabel('Magnitude (dB)');
+title('Magnitude response - Lower Passband');
+saveas(gcf,'upper passband','epsc')
+
+figure;
+plot(w,20*log10(abs(z)))
+grid on;
+axis([1000 1400 20*log10(0.98) 20*log10(1.005) ])
+xlabel('Frequency rad/s');
+ylabel('Magnitude (dB)');
+title('Magnitude response - Upper Passband');
+saveas(gcf,'lower passband','epsc')
+
+
+
+%% Input Siganl
+% Freq components,
+
+Omega1 = Omega_c1/2;
+Omega2 = Omega_c1 + (Omega_c2-Omega_c1)/2; 
+Omega3 = Omega_c2 + (Omega_s/2-Omega_c2)/2;
+
+% Generate the Input signal
+
+samples = 300; % Enough to achieve a steady-state response.
+n1 = 0:1:samples; 
+n2 = 0:0.1:samples;
+
+x     = cos(Omega1.*n1*T) + cos(Omega2.*n1*T) + cos(Omega3.*n1*T); 
+X_env = cos(Omega1.*n2*T) + cos(Omega2.*n2*T) + cos(Omega3.*n2*T);
+
+R = cos(Omega1.*n1*T) + cos(Omega3.*n1*T); 
+
+
+stem(n1(1:100),x(1:100))
+xlabel('n')
+ylabel('Amplitude')
+title(strcat(['Input signal x[n]',' ','- Time Domain']));
+hold on
+plot(n2(1:1000),X_env(1:1000),'-.')
+legend('Input signal','Input Signal Continous Time Shape');
+
+
+figure;
+L = length(x);
+NFFT = 2^nextpow2(L); % Next power of 2 from length of y
+Y = fft(x,NFFT)/L;
+f = Omega_s/(2)*linspace(0,1,NFFT/2+1);
+
+% Plot single-sided amplitude spectrum.
+plot(f,2*abs(Y(1:NFFT/2+1))) 
+title('Single-Sided Amplitude Spectrum of x(nT)')
+xlabel('Frequency (rad/s)')
+ylabel('|X(w)|')
+saveas(gcf,'Xw','epsc')
+
+
+figure
+L=1400;
+X = fft(x,L);
+H_w = fft(h_w,L);
+filtered = ifft(X.*H_w);
+stem(filtered(1:100));
+grid on;
+title('Filtered Input Signal x(nT)')
+saveas(gcf,'Xw','epsc')
+
+
+figure
+plot(filtered(42:42+85))
+hold on
+out = conv(h_w,x,'same'); %% 'same' is there to crop the filtered signal
+plot(out(4:85))
+title('Filtered Input Signal Using conv()')
+
+figure;
+L = length(out);
+NFFT = 2^nextpow2(L); % Next power of 2 from length of y
+Y = fft(out,NFFT)/L;
+f = Omega_s/(2)*linspace(0,1,NFFT/2+1);
+
+plot(f,2*abs(Y(1:NFFT/2+1)))    % Plot single-sided amplitude spectrum.
+title('Single-Sided Amplitude Spectrum of the Filtered Signal')
+xlabel('Frequency (rad/s)')
+ylabel('|Y(f)|')
+
+%% Expected Signal in the Freq domain
+figure;
+L = length(R);
+NFFT = 2^nextpow2(L); % Next power of 2 from length of y
+Y = fft(R,NFFT)/L;
+f = Omega_s/(2)*linspace(0,1,NFFT/2+1);
+
+plot(f,2*abs(Y(1:NFFT/2+1)))    % Plot single-sided amplitude spectrum.
+title('Single-Sided Amplitude Spectrum of the Expected Filtered Signal')
+xlabel('Frequency (rad/s)')
+ylabel('|Y(f)|')
+saveas(gcf,'efs','epsc')
+##### SOURCE END #####
+--></body></html>
