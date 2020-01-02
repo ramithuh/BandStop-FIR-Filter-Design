@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2019.12.28)  1 JAN 2020 20:56
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2019.12.28)  2 JAN 2020 13:37
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -681,34 +681,34 @@ Underfull \hbox (badness 10000) in paragraph at lines 177--181
  []
 
 [4]
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 225.
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 226.
  (/usr/local/texlive/2019/texmf-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10.95> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 225.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 226.
 <windows.pdf, id=234, 317.02611pt x 183.19702pt>
 File: windows.pdf Graphic file (type pdf)
 <use windows.pdf>
-Package pdftex.def Info: windows.pdf  used on input line 235.
+Package pdftex.def Info: windows.pdf  used on input line 236.
 (pdftex.def)             Requested size: 241.84843pt x 139.7567pt.
 <windows-res.pdf, id=237, 408.77075pt x 249.73601pt>
 File: windows-res.pdf Graphic file (type pdf)
 <use windows-res.pdf>
-Package pdftex.def Info: windows-res.pdf  used on input line 241.
+Package pdftex.def Info: windows-res.pdf  used on input line 242.
 (pdftex.def)             Requested size: 241.84843pt x 147.7545pt.
 <window-char.pdf, id=241, 315.13293pt x 288.39485pt>
 File: window-char.pdf Graphic file (type pdf)
 <use window-char.pdf>
-Package pdftex.def Info: window-char.pdf  used on input line 257.
+Package pdftex.def Info: window-char.pdf  used on input line 258.
 (pdftex.def)             Requested size: 299.37457pt x 273.97354pt.
  [5 </Users/ramith/Documents/170221T/Semester 4/EN2570 - Digital Signal Processing/Filter Design Project /BandStop-FIR-Filter-Design/FIR_Report/windows.pdf> </Users/ramith/Documents/170221T/Semester 4/EN2570 - Digital Signal Processing/Filter Design Project /BandStop-FIR-Filter-Design/FIR_Report/windows-res.pdf>]
-Underfull \hbox (badness 10000) in paragraph at lines 277--278
+Underfull \hbox (badness 10000) in paragraph at lines 278--279
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 278--279
+Underfull \hbox (badness 10000) in paragraph at lines 279--280
 
  []
 
@@ -716,108 +716,108 @@ Underfull \hbox (badness 10000) in paragraph at lines 278--279
 <HW.pdf, id=425, 361.35pt x 222.8325pt>
 File: HW.pdf Graphic file (type pdf)
 <use HW.pdf>
-Package pdftex.def Info: HW.pdf  used on input line 309.
+Package pdftex.def Info: HW.pdf  used on input line 310.
 (pdftex.def)             Requested size: 289.0804pt x 178.26624pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 317--318
+Underfull \hbox (badness 10000) in paragraph at lines 318--319
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 324--326
+Underfull \hbox (badness 10000) in paragraph at lines 325--327
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 328--330
+Underfull \hbox (badness 10000) in paragraph at lines 329--331
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 335--336
+Underfull \hbox (badness 10000) in paragraph at lines 336--337
 
  []
 
 <bandstop.pdf, id=426, 303.77829pt x 197.63937pt>
 File: bandstop.pdf Graphic file (type pdf)
 <use bandstop.pdf>
-Package pdftex.def Info: bandstop.pdf  used on input line 339.
+Package pdftex.def Info: bandstop.pdf  used on input line 340.
 (pdftex.def)             Requested size: 273.39792pt x 177.87378pt.
 [7
 
  </Users/ramith/Documents/170221T/Semester 4/EN2570 - Digital Signal Processing/Filter Design Project /BandStop-FIR-Filter-Design/FIR_Report/HW.pdf>]
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 366.
+(hyperref)                removing `math shift' on input line 367.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\delta' on input line 366.
+(hyperref)                removing `\delta' on input line 367.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 366.
+(hyperref)                removing `math shift' on input line 367.
 
 [8 </Users/ramith/Documents/170221T/Semester 4/EN2570 - Digital Signal Processing/Filter Design Project /BandStop-FIR-Filter-Design/FIR_Report/bandstop.pdf>]
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 385.
+(hyperref)                removing `math shift' on input line 386.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `subscript' on input line 385.
+(hyperref)                removing `subscript' on input line 386.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 385.
+(hyperref)                removing `math shift' on input line 386.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 385.
+(hyperref)                removing `math shift' on input line 386.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `subscript' on input line 385.
+(hyperref)                removing `subscript' on input line 386.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 385.
+(hyperref)                removing `math shift' on input line 386.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 390.
+(hyperref)                removing `math shift' on input line 391.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\alpha' on input line 390.
+(hyperref)                removing `\alpha' on input line 391.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 390.
+(hyperref)                removing `math shift' on input line 391.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 397--398
+Underfull \hbox (badness 10000) in paragraph at lines 398--399
 
  []
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 402.
+(hyperref)                removing `math shift' on input line 403.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 402.
+(hyperref)                removing `math shift' on input line 403.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 402.
+(hyperref)                removing `math shift' on input line 403.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 402.
+(hyperref)                removing `math shift' on input line 403.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 409--414
+Underfull \hbox (badness 10000) in paragraph at lines 410--415
 
  []
 
@@ -826,15 +826,15 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 442.
+(hyperref)                removing `math shift' on input line 443.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `subscript' on input line 442.
+(hyperref)                removing `subscript' on input line 443.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 442.
+(hyperref)                removing `math shift' on input line 443.
 
 [9]
 Package epstopdf Info: Source file: <kaiser.eps>
@@ -844,12 +844,12 @@ Package epstopdf Info: Source file: <kaiser.eps>
 (epstopdf)                    date: 2019-12-29 18:52:21
 (epstopdf)                    size: 18152 bytes
 (epstopdf)             Command: <repstopdf --outfile=kaiser-eps-converted-to.pdf kaiser.eps>
-(epstopdf)             \includegraphics on input line 455.
+(epstopdf)             \includegraphics on input line 456.
 Package epstopdf Info: Output file is already uptodate.
 <kaiser-eps-converted-to.pdf, id=501, 471.7625pt x 385.44pt>
 File: kaiser-eps-converted-to.pdf Graphic file (type pdf)
 <use kaiser-eps-converted-to.pdf>
-Package pdftex.def Info: kaiser-eps-converted-to.pdf  used on input line 455.
+Package pdftex.def Info: kaiser-eps-converted-to.pdf  used on input line 456.
 (pdftex.def)             Requested size: 330.23149pt x 269.80615pt.
 Package epstopdf Info: Source file: <cir.eps>
 (epstopdf)                    date: 2019-12-29 20:27:24
@@ -858,12 +858,12 @@ Package epstopdf Info: Source file: <cir.eps>
 (epstopdf)                    date: 2019-12-29 20:55:49
 (epstopdf)                    size: 18495 bytes
 (epstopdf)             Command: <repstopdf --outfile=cir-eps-converted-to.pdf cir.eps>
-(epstopdf)             \includegraphics on input line 463.
+(epstopdf)             \includegraphics on input line 464.
 Package epstopdf Info: Output file is already uptodate.
 <cir-eps-converted-to.pdf, id=502, 479.7925pt x 385.44pt>
 File: cir-eps-converted-to.pdf Graphic file (type pdf)
 <use cir-eps-converted-to.pdf>
-Package pdftex.def Info: cir-eps-converted-to.pdf  used on input line 463.
+Package pdftex.def Info: cir-eps-converted-to.pdf  used on input line 464.
 (pdftex.def)             Requested size: 335.85245pt x 269.80615pt.
  [10 </Users/ramith/Documents/170221T/Semester 4/EN2570 - Digital Signal Processing/Filter Design Project /BandStop-FIR-Filter-Design/FIR_Report/kaiser-eps-converted-to.pdf>]
 Package epstopdf Info: Source file: <mag.eps>
@@ -873,12 +873,12 @@ Package epstopdf Info: Source file: <mag.eps>
 (epstopdf)                    date: 2019-12-29 20:58:56
 (epstopdf)                    size: 12016 bytes
 (epstopdf)             Command: <repstopdf --outfile=mag-eps-converted-to.pdf mag.eps>
-(epstopdf)             \includegraphics on input line 471.
+(epstopdf)             \includegraphics on input line 472.
 Package epstopdf Info: Output file is already uptodate.
 <mag-eps-converted-to.pdf, id=517, 487.8225pt x 387.4475pt>
 File: mag-eps-converted-to.pdf Graphic file (type pdf)
 <use mag-eps-converted-to.pdf>
-Package pdftex.def Info: mag-eps-converted-to.pdf  used on input line 471.
+Package pdftex.def Info: mag-eps-converted-to.pdf  used on input line 472.
 (pdftex.def)             Requested size: 341.47342pt x 271.2114pt.
  [11 </Users/ramith/Documents/170221T/Semester 4/EN2570 - Digital Signal Processing/Filter Design Project /BandStop-FIR-Filter-Design/FIR_Report/cir-eps-converted-to.pdf> </Users/ramith/Documents/170221T/Semester 4/EN2570 - Digital Signal Processing/Filter Design Project /BandStop-FIR-Filter-Design/FIR_Report/mag-eps-converted-to.pdf>]
 Package epstopdf Info: Source file: <upassband.eps>
@@ -888,12 +888,12 @@ Package epstopdf Info: Source file: <upassband.eps>
 (epstopdf)                    date: 2019-12-29 21:01:12
 (epstopdf)                    size: 9868 bytes
 (epstopdf)             Command: <repstopdf --outfile=upassband-eps-converted-to.pdf upassband.eps>
-(epstopdf)             \includegraphics on input line 481.
+(epstopdf)             \includegraphics on input line 482.
 Package epstopdf Info: Output file is already uptodate.
 <upassband-eps-converted-to.pdf, id=540, 486.81876pt x 387.4475pt>
 File: upassband-eps-converted-to.pdf Graphic file (type pdf)
 <use upassband-eps-converted-to.pdf>
-Package pdftex.def Info: upassband-eps-converted-to.pdf  used on input line 481.
+Package pdftex.def Info: upassband-eps-converted-to.pdf  used on input line 482.
 (pdftex.def)             Requested size: 338.58632pt x 269.47328pt.
 Package epstopdf Info: Source file: <lpassband.eps>
 (epstopdf)                    date: 2019-12-29 20:27:26
@@ -902,20 +902,20 @@ Package epstopdf Info: Source file: <lpassband.eps>
 (epstopdf)                    date: 2019-12-29 21:00:38
 (epstopdf)                    size: 9999 bytes
 (epstopdf)             Command: <repstopdf --outfile=lpassband-eps-converted-to.pdf lpassband.eps>
-(epstopdf)             \includegraphics on input line 488.
+(epstopdf)             \includegraphics on input line 489.
 Package epstopdf Info: Output file is already uptodate.
 <lpassband-eps-converted-to.pdf, id=541, 489.83pt x 387.4475pt>
 File: lpassband-eps-converted-to.pdf Graphic file (type pdf)
 <use lpassband-eps-converted-to.pdf>
-Package pdftex.def Info: lpassband-eps-converted-to.pdf  used on input line 488.
+Package pdftex.def Info: lpassband-eps-converted-to.pdf  used on input line 489.
 (pdftex.def)             Requested size: 338.58632pt x 267.82384pt.
 <input.pdf, id=542, 929.4725pt x 255.95625pt>
 File: input.pdf Graphic file (type pdf)
 <use input.pdf>
-Package pdftex.def Info: input.pdf  used on input line 501.
+Package pdftex.def Info: input.pdf  used on input line 502.
 (pdftex.def)             Requested size: 539.09444pt x 148.45471pt.
 
-Overfull \hbox (55.39757pt too wide) in paragraph at lines 501--502
+Overfull \hbox (55.39757pt too wide) in paragraph at lines 502--503
  [][] 
  []
 
@@ -927,28 +927,28 @@ Package epstopdf Info: Source file: <Xw.eps>
 (epstopdf)                    date: 2019-12-30 01:02:46
 (epstopdf)                    size: 10729 bytes
 (epstopdf)             Command: <repstopdf --outfile=Xw-eps-converted-to.pdf Xw.eps>
-(epstopdf)             \includegraphics on input line 511.
+(epstopdf)             \includegraphics on input line 512.
 Package epstopdf Info: Output file is already uptodate.
 <Xw-eps-converted-to.pdf, id=563, 480.79625pt x 388.45125pt>
 File: Xw-eps-converted-to.pdf Graphic file (type pdf)
 <use Xw-eps-converted-to.pdf>
-Package pdftex.def Info: Xw-eps-converted-to.pdf  used on input line 511.
+Package pdftex.def Info: Xw-eps-converted-to.pdf  used on input line 512.
 (pdftex.def)             Requested size: 336.55507pt x 271.914pt.
  [13 </Users/ramith/Documents/170221T/Semester 4/EN2570 - Digital Signal Processing/Filter Design Project /BandStop-FIR-Filter-Design/FIR_Report/input.pdf> </Users/ramith/Documents/170221T/Semester 4/EN2570 - Digital Signal Processing/Filter Design Project /BandStop-FIR-Filter-Design/FIR_Report/Xw-eps-converted-to.pdf>]
 <filtered.pdf, id=581, 884.30376pt x 316.18124pt>
 File: filtered.pdf Graphic file (type pdf)
 <use filtered.pdf>
-Package pdftex.def Info: filtered.pdf  used on input line 519.
+Package pdftex.def Info: filtered.pdf  used on input line 520.
 (pdftex.def)             Requested size: 530.58635pt x 189.7102pt.
 
-Overfull \hbox (46.88948pt too wide) in paragraph at lines 519--520
+Overfull \hbox (46.88948pt too wide) in paragraph at lines 520--521
  [][] 
  []
 
 <filtered_mag.pdf, id=582, 479.7925pt x 388.45125pt>
 File: filtered_mag.pdf Graphic file (type pdf)
 <use filtered_mag.pdf>
-Package pdftex.def Info: filtered_mag.pdf  used on input line 527.
+Package pdftex.def Info: filtered_mag.pdf  used on input line 528.
 (pdftex.def)             Requested size: 335.85245pt x 271.914pt.
 Package epstopdf Info: Source file: <efs.eps>
 (epstopdf)                    date: 2019-12-30 01:36:47
@@ -957,20 +957,20 @@ Package epstopdf Info: Source file: <efs.eps>
 (epstopdf)                    date: 2019-12-30 01:37:06
 (epstopdf)                    size: 10858 bytes
 (epstopdf)             Command: <repstopdf --outfile=efs-eps-converted-to.pdf efs.eps>
-(epstopdf)             \includegraphics on input line 536.
+(epstopdf)             \includegraphics on input line 537.
 Package epstopdf Info: Output file is already uptodate.
 <efs-eps-converted-to.pdf, id=583, 480.79625pt x 388.45125pt>
 File: efs-eps-converted-to.pdf Graphic file (type pdf)
 <use efs-eps-converted-to.pdf>
-Package pdftex.def Info: efs-eps-converted-to.pdf  used on input line 536.
+Package pdftex.def Info: efs-eps-converted-to.pdf  used on input line 537.
 (pdftex.def)             Requested size: 336.55507pt x 271.914pt.
 [14 </Users/ramith/Documents/170221T/Semester 4/EN2570 - Digital Signal Processing/Filter Design Project /BandStop-FIR-Filter-Design/FIR_Report/filtered.pdf> </Users/ramith/Documents/170221T/Semester 4/EN2570 - Digital Signal Processing/Filter Design Project /BandStop-FIR-Filter-Design/FIR_Report/filtered_mag.pdf>]
-Underfull \hbox (badness 10000) in paragraph at lines 544--549
+Underfull \hbox (badness 10000) in paragraph at lines 545--550
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 544--549
+Underfull \hbox (badness 10000) in paragraph at lines 545--550
 
  []
 
@@ -978,134 +978,134 @@ Underfull \hbox (badness 10000) in paragraph at lines 544--549
 <temp_.pdf, id=631, 614.295pt x 794.97pt>
 File: temp_.pdf Graphic file (type pdf)
 <use temp_.pdf>
-Package pdftex.def Info: temp_.pdf  used on input line 557.
+Package pdftex.def Info: temp_.pdf  used on input line 558.
 (pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
 File: temp_.pdf Graphic file (type pdf)
 <use temp_.pdf>
-Package pdftex.def Info: temp_.pdf  used on input line 557.
+Package pdftex.def Info: temp_.pdf  used on input line 558.
 (pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
 <temp_.pdf, id=634, page=1, 614.295pt x 794.97pt>
 File: temp_.pdf Graphic file (type pdf)
 <use temp_.pdf, page 1>
-Package pdftex.def Info: temp_.pdf , page1 used on input line 557.
+Package pdftex.def Info: temp_.pdf , page1 used on input line 558.
 (pdftex.def)             Requested size: 483.69687pt x 625.9694pt.
 File: temp_.pdf Graphic file (type pdf)
 <use temp_.pdf, page 1>
-Package pdftex.def Info: temp_.pdf , page1 used on input line 557.
+Package pdftex.def Info: temp_.pdf , page1 used on input line 558.
 (pdftex.def)             Requested size: 759.9276pt x 983.43575pt.
  [16]
 File: temp_.pdf Graphic file (type pdf)
 <use temp_.pdf, page 1>
-Package pdftex.def Info: temp_.pdf , page1 used on input line 557.
+Package pdftex.def Info: temp_.pdf , page1 used on input line 558.
 (pdftex.def)             Requested size: 759.9276pt x 983.43575pt.
 File: temp_.pdf Graphic file (type pdf)
 <use temp_.pdf, page 1>
-Package pdftex.def Info: temp_.pdf , page1 used on input line 557.
+Package pdftex.def Info: temp_.pdf , page1 used on input line 558.
 (pdftex.def)             Requested size: 759.9276pt x 983.43575pt.
 File: temp_.pdf Graphic file (type pdf)
 <use temp_.pdf, page 1>
-Package pdftex.def Info: temp_.pdf , page1 used on input line 557.
+Package pdftex.def Info: temp_.pdf , page1 used on input line 558.
 (pdftex.def)             Requested size: 759.9276pt x 983.43575pt.
  [17 </Users/ramith/Documents/170221T/Semester 4/EN2570 - Digital Signal Processing/Filter Design Project /BandStop-FIR-Filter-Design/FIR_Report/temp_.pdf>]
 <BandStop_Kaiser.pdf, id=650, 614.295pt x 794.97pt>
 File: BandStop_Kaiser.pdf Graphic file (type pdf)
 <use BandStop_Kaiser.pdf>
-Package pdftex.def Info: BandStop_Kaiser.pdf  used on input line 558.
+Package pdftex.def Info: BandStop_Kaiser.pdf  used on input line 559.
 (pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
 File: BandStop_Kaiser.pdf Graphic file (type pdf)
 <use BandStop_Kaiser.pdf>
-Package pdftex.def Info: BandStop_Kaiser.pdf  used on input line 558.
+Package pdftex.def Info: BandStop_Kaiser.pdf  used on input line 559.
 (pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
 <BandStop_Kaiser.pdf, id=653, page=1, 614.295pt x 794.97pt>
 File: BandStop_Kaiser.pdf Graphic file (type pdf)
 <use BandStop_Kaiser.pdf, page 1>
-Package pdftex.def Info: BandStop_Kaiser.pdf , page1 used on input line 558.
+Package pdftex.def Info: BandStop_Kaiser.pdf , page1 used on input line 559.
 (pdftex.def)             Requested size: 483.69687pt x 625.9694pt.
 File: BandStop_Kaiser.pdf Graphic file (type pdf)
 <use BandStop_Kaiser.pdf, page 1>
-Package pdftex.def Info: BandStop_Kaiser.pdf , page1 used on input line 558.
+Package pdftex.def Info: BandStop_Kaiser.pdf , page1 used on input line 559.
 (pdftex.def)             Requested size: 759.9276pt x 983.43575pt.
 File: BandStop_Kaiser.pdf Graphic file (type pdf)
 <use BandStop_Kaiser.pdf, page 1>
-Package pdftex.def Info: BandStop_Kaiser.pdf , page1 used on input line 558.
+Package pdftex.def Info: BandStop_Kaiser.pdf , page1 used on input line 559.
 (pdftex.def)             Requested size: 759.9276pt x 983.43575pt.
 File: BandStop_Kaiser.pdf Graphic file (type pdf)
 <use BandStop_Kaiser.pdf, page 1>
-Package pdftex.def Info: BandStop_Kaiser.pdf , page1 used on input line 558.
+Package pdftex.def Info: BandStop_Kaiser.pdf , page1 used on input line 559.
 (pdftex.def)             Requested size: 759.9276pt x 983.43575pt.
 File: BandStop_Kaiser.pdf Graphic file (type pdf)
 <use BandStop_Kaiser.pdf, page 1>
-Package pdftex.def Info: BandStop_Kaiser.pdf , page1 used on input line 558.
+Package pdftex.def Info: BandStop_Kaiser.pdf , page1 used on input line 559.
 (pdftex.def)             Requested size: 759.9276pt x 983.43575pt.
  [18 </Users/ramith/Documents/170221T/Semester 4/EN2570 - Digital Signal Processing/Filter Design Project /BandStop-FIR-Filter-Design/FIR_Report/BandStop_Kaiser.pdf>]
 <BandStop_Kaiser.pdf, id=667, page=2, 614.295pt x 794.97pt>
 File: BandStop_Kaiser.pdf Graphic file (type pdf)
 <use BandStop_Kaiser.pdf, page 2>
-Package pdftex.def Info: BandStop_Kaiser.pdf , page2 used on input line 558.
+Package pdftex.def Info: BandStop_Kaiser.pdf , page2 used on input line 559.
 (pdftex.def)             Requested size: 759.9276pt x 983.43575pt.
 File: BandStop_Kaiser.pdf Graphic file (type pdf)
 <use BandStop_Kaiser.pdf, page 2>
-Package pdftex.def Info: BandStop_Kaiser.pdf , page2 used on input line 558.
+Package pdftex.def Info: BandStop_Kaiser.pdf , page2 used on input line 559.
 (pdftex.def)             Requested size: 759.9276pt x 983.43575pt.
 File: BandStop_Kaiser.pdf Graphic file (type pdf)
 <use BandStop_Kaiser.pdf, page 2>
-Package pdftex.def Info: BandStop_Kaiser.pdf , page2 used on input line 558.
+Package pdftex.def Info: BandStop_Kaiser.pdf , page2 used on input line 559.
 (pdftex.def)             Requested size: 759.9276pt x 983.43575pt.
  [19 </Users/ramith/Documents/170221T/Semester 4/EN2570 - Digital Signal Processing/Filter Design Project /BandStop-FIR-Filter-Design/FIR_Report/BandStop_Kaiser.pdf>]
 <BandStop_Kaiser.pdf, id=674, page=3, 614.295pt x 794.97pt>
 File: BandStop_Kaiser.pdf Graphic file (type pdf)
 <use BandStop_Kaiser.pdf, page 3>
-Package pdftex.def Info: BandStop_Kaiser.pdf , page3 used on input line 558.
+Package pdftex.def Info: BandStop_Kaiser.pdf , page3 used on input line 559.
 (pdftex.def)             Requested size: 759.9276pt x 983.43575pt.
 File: BandStop_Kaiser.pdf Graphic file (type pdf)
 <use BandStop_Kaiser.pdf, page 3>
-Package pdftex.def Info: BandStop_Kaiser.pdf , page3 used on input line 558.
+Package pdftex.def Info: BandStop_Kaiser.pdf , page3 used on input line 559.
 (pdftex.def)             Requested size: 759.9276pt x 983.43575pt.
 File: BandStop_Kaiser.pdf Graphic file (type pdf)
 <use BandStop_Kaiser.pdf, page 3>
-Package pdftex.def Info: BandStop_Kaiser.pdf , page3 used on input line 558.
+Package pdftex.def Info: BandStop_Kaiser.pdf , page3 used on input line 559.
 (pdftex.def)             Requested size: 759.9276pt x 983.43575pt.
  [20 </Users/ramith/Documents/170221T/Semester 4/EN2570 - Digital Signal Processing/Filter Design Project /BandStop-FIR-Filter-Design/FIR_Report/BandStop_Kaiser.pdf>]
 <BandStop_Kaiser.pdf, id=680, page=4, 614.295pt x 794.97pt>
 File: BandStop_Kaiser.pdf Graphic file (type pdf)
 <use BandStop_Kaiser.pdf, page 4>
-Package pdftex.def Info: BandStop_Kaiser.pdf , page4 used on input line 558.
+Package pdftex.def Info: BandStop_Kaiser.pdf , page4 used on input line 559.
 (pdftex.def)             Requested size: 759.9276pt x 983.43575pt.
 File: BandStop_Kaiser.pdf Graphic file (type pdf)
 <use BandStop_Kaiser.pdf, page 4>
-Package pdftex.def Info: BandStop_Kaiser.pdf , page4 used on input line 558.
+Package pdftex.def Info: BandStop_Kaiser.pdf , page4 used on input line 559.
 (pdftex.def)             Requested size: 759.9276pt x 983.43575pt.
 File: BandStop_Kaiser.pdf Graphic file (type pdf)
 <use BandStop_Kaiser.pdf, page 4>
-Package pdftex.def Info: BandStop_Kaiser.pdf , page4 used on input line 558.
+Package pdftex.def Info: BandStop_Kaiser.pdf , page4 used on input line 559.
 (pdftex.def)             Requested size: 759.9276pt x 983.43575pt.
  [21 </Users/ramith/Documents/170221T/Semester 4/EN2570 - Digital Signal Processing/Filter Design Project /BandStop-FIR-Filter-Design/FIR_Report/BandStop_Kaiser.pdf>]
 <BandStop_Kaiser.pdf, id=686, page=5, 614.295pt x 794.97pt>
 File: BandStop_Kaiser.pdf Graphic file (type pdf)
 <use BandStop_Kaiser.pdf, page 5>
-Package pdftex.def Info: BandStop_Kaiser.pdf , page5 used on input line 558.
+Package pdftex.def Info: BandStop_Kaiser.pdf , page5 used on input line 559.
 (pdftex.def)             Requested size: 759.9276pt x 983.43575pt.
 File: BandStop_Kaiser.pdf Graphic file (type pdf)
 <use BandStop_Kaiser.pdf, page 5>
-Package pdftex.def Info: BandStop_Kaiser.pdf , page5 used on input line 558.
+Package pdftex.def Info: BandStop_Kaiser.pdf , page5 used on input line 559.
 (pdftex.def)             Requested size: 759.9276pt x 983.43575pt.
 File: BandStop_Kaiser.pdf Graphic file (type pdf)
 <use BandStop_Kaiser.pdf, page 5>
-Package pdftex.def Info: BandStop_Kaiser.pdf , page5 used on input line 558.
+Package pdftex.def Info: BandStop_Kaiser.pdf , page5 used on input line 559.
 (pdftex.def)             Requested size: 759.9276pt x 983.43575pt.
  [22 </Users/ramith/Documents/170221T/Semester 4/EN2570 - Digital Signal Processing/Filter Design Project /BandStop-FIR-Filter-Design/FIR_Report/BandStop_Kaiser.pdf>]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 562.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 562.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 563.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 563.
  (/Users/ramith/Documents/170221T/Semester 4/EN2570 - Digital Signal Processing/Filter Design Project /BandStop-FIR-Filter-Design/FIR_Report/main.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 562.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 562.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 563.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 563.
 Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: 6495CF0447437E9F4AFF6FE919F46D02;2097.
 
 
 LaTeX Warning: There were multiply-defined labels.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 562.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 563.
  ) 
 Here is how much of TeX's memory you used:
  13286 strings out of 492616
@@ -1116,7 +1116,7 @@ Here is how much of TeX's memory you used:
  1141 hyphenation exceptions out of 8191
  42i,18n,50p,488b,493s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2019/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}{/usr/local/texlive/2019/texmf-dist/fonts/enc/dvips/fontawesome/fontawesometwo.enc}</usr/local/texlive/2019/texmf-dist/fonts/type1/public/fontawesome/FontAwesome.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx6.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx8.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmss12.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/rsfs/rsfs10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfbx1095.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfbx1200.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfbx2074.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfcc1728.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfcc2074.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfrm0800.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfrm0900.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfrm1095.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfti1095.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfti1200.pfb>
-Output written on "/Users/ramith/Documents/170221T/Semester 4/EN2570 - Digital Signal Processing/Filter Design Project /BandStop-FIR-Filter-Design/FIR_Report/main.pdf" (22 pages, 933562 bytes).
+Output written on "/Users/ramith/Documents/170221T/Semester 4/EN2570 - Digital Signal Processing/Filter Design Project /BandStop-FIR-Filter-Design/FIR_Report/main.pdf" (22 pages, 933522 bytes).
 PDF statistics:
  810 PDF objects out of 1000 (max. 8388607)
  644 compressed objects within 7 object streams
